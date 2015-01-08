@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Medium React</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<header class="top_nav">
+			<div class="logo">
+				<a href="https://medium.com/">M</a>
+			</div>
+			<div class="title">
+				<h3><span class="h3_span">PUBLISHED IN</span><br>REACT TUTORIALS</h3>
+			</div>
+			<div class="search_sign">
+				<a href="https://medium.com/m/signin?redirect=%2Freact-tutorials%2Freact-components-828c397e3dc8">
+					<div class="sign_in">Sign in / Sign up</div>
+				</a>
+				<a href="https://medium.com/search">
+					<div class="search"><img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSH0yQk2-Aunl5nFqsX6OHzzpEVgYvYsLMubi-ROqXI66XcDeN8YB3jyFA"></div>
+				</a>
+			</div>
+		</header>
+		<div class="body_image"></div>
+		<div class="body_text">
+			<h2>React Components</h2>
+			<p>Components are the smallest, yet most fundamental part of React. They’re similar, in concepts, to things like widgets and modules. React defines itself as a library for building user interfaces. As such, when you think of a user interface you want to build (with React), you need to think of it in terms of the smallest possible components that you can define.</p>
+			<p>These components include code which defines how DOM elements are created and how users can interact with them. Components can be defined purely in JavaScript or they can be defined in a superset (or extended variation) of JavaScript called JSX. If you decide to use JSX for your component definitions, you may also need a compiler application, but we’ll get to that in a minute.</p>
+			<blockquote>We’re going to be referring to pure JavaScript as JS and the React version of JavaScript as JSX.<br><br>You can find the accompanying source-code, for this tutorial, at: https://github.com/formativ/tutorial-react-components.<br><br>Please post any errors you find, or questions you have as comments on this article or as issues on GitHub.<br><br>Thanks to Pete Hunt for helping to improve this!</blockquote>
+			<h3>Embedded HTML</h3>
+			<p>If you’ve been developing websites for a while, you may have flinched when I spoke about using HTML within your JavaScript. For the longest time, a development paradigm has existed which says that you should split HTML and JavaScript. Words like unobtrusive have been repurposed to express this kind of separation. That is exactly how I felt, until I started working with React.</p>
+			<p>The reason this paradigm exists is to decrease coupling (how much things depend on each other) and increase cohesion (how well different things work together). So we have created an environment in which we try our best to make HTML (and templates) as free of logic as possible. We then need to attach behaviour to this in the form of external scripts.</p>
+			<p>Additionally, when we need to modify the contents of a web page, via JavaScript, we have to know about HTML and/or templates. How else can we know what to display and where to display it? We could load external templates, via additional HTTP requests, but how would we know where to put it without some knowledge of the DOM? We could load templates embedded within special script tags, but we would first need to fetch the contents of those script tags.</p>
+			<pre>thieiid<br>ththth<br>dhdhd<br><br><br>fshsdfjh</pre>
+			<p>You may also notice that the comment we began with, which had @jsx React.DOM in it, wasn’t required in the JS implementation. This is because the parser needs to see that in order for it to convert the JSX syntax to JS. Whether you are loading JSX from script elements within the same document, or loading external JSX scripts, you should always include this comment at the top of the script file.</p>
+		</div>
+	</body>
+</html>
